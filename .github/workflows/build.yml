@@ -2,7 +2,7 @@ name: Build and Deploy
 
 on:
   schedule:
-    - cron: '0 5 * * 0'  # 仅周日凌晨5点触发
+    - cron: '0 2,14 * * *'  # 每天上午2点和下午2点各一次
   push:
     branches: [main]
   pull_request:
